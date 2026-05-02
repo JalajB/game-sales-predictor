@@ -11,5 +11,3 @@ print(df.isnull().sum())
 
 
 df.to_csv("vgsales_clean.csv", index=False)
-
-print("Hello")

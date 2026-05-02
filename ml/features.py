@@ -11,4 +11,3 @@ print(df.head())
 
 
 df.to_csv("vgsales_features.csv", index=False)
-print("Hello")
