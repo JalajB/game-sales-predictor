@@ -2,9 +2,9 @@ import pandas as pd
 
 df = pd.read_csv('vgsales_clean.csv')
 
-df = df[["Platform", "Year", "Genre", "Publisher", "Global_Sales"]]
+df = df[["Platform", "Year", "Genre", "Global_Sales"]]
 
-df = pd.get_dummies(df, columns=["Platform", "Genre", "Publisher"])
+df = pd.get_dummies(df, columns=["Platform", "Genre"])
 
 print(df.shape)
 print(df.head())
