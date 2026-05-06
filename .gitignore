@@ -5,3 +5,4 @@ frontend/.env
 ml/*.npy
 ml/*.csv
 venv
+frontend/node_modules
