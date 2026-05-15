@@ -2,15 +2,15 @@ import numpy as np
 import pandas as pd
 
 # Load saved weights and normalization values
-w = np.load("../ml/weights.npy")
-b = np.load("../ml/bias.npy")[0]
-X_mean = np.load("../ml/X_mean.npy")
-X_std = np.load("../ml/X_std.npy")
-y_mean = np.load("../ml/y_mean.npy")[0]
-y_std = np.load("../ml/y_std.npy")[0]
+w = np.load("weights.npy")
+b = np.load("bias.npy")[0]
+X_mean = np.load("X_mean.npy")
+X_std = np.load("X_std.npy")
+y_mean = np.load("y_mean.npy")[0]
+y_std = np.load("y_std.npy")[0]
 
 # Load feature column names so we know the exact order
-feature_columns = pd.read_csv("../ml/vgsales_features.csv").drop(columns=["Global_Sales"]).columns.tolist()
+feature_columns = pd.read_csv("vgsales_features.csv").drop(columns=["Global_Sales"]).columns.tolist()
 
 def predict(platform: str, genre: str, year: int) -> float:
     # Build a zero row with all feature columns
