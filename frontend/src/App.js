@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API = "http://localhost:8000";
+const API = "https://game-sales-predictor.onrender.com";
 
 export default function App() {
   const [platform, setPlatform] = useState("");
